@@ -19,6 +19,9 @@ const FrameOnePage = () => {
     // Navigate to the new page when the button is clicked
     navigate("/MySubmissions");
   };
+  const handleReports = () => {
+    navigate("/Reports")
+  }
   const [isOpen, setIsOpen] = useState(false);
 
   const openNav = () => {
@@ -80,7 +83,9 @@ const FrameOnePage = () => {
                   />
 
                   <Button
+                    
                     className="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-teal-500 duration-300 cursor-pointer font-semibold leading-[normal] min-w-[200px] md:text-xl sm:text-base text-lg text-center mb-6 md:mb-0"
+                    onClick={handleReports}
                     size="sm"
                   >
                     Reports
