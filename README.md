@@ -1,6 +1,6 @@
 ## umat_tsap_application
 
-Generated with ❤️ by Ebenezer Kobina Acquah [github.com/EbenezerKobinaAcquah]
+Generated with ❤️ by Ebenezer Kobina Acquah [(https://github.com/EbenezerKobinaAcquah)]
 
 ## Description
 
