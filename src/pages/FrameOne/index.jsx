@@ -37,12 +37,12 @@ const FrameOnePage = () => {
           />
         </div>
 
-        <div className="relative bg-gray-100 col-span-2 items-center justify-start  md:ml-[0] w-full">
+        <div className="relative bg-gray-100 col-span-2 items-center justify-start md:ml-[0] w-full">
           <div className="">
             <StudentProfile />
           </div>
 
-          <div className="md:pt-[5%] md:mb-[5%] md:pl-[10%] md:pr-[10%]">
+          <div className="md:pt-[2%] md:mb-[5%] md:pl-[5%] md:pr-[5%]">
             <div className="bg-white-A700 shadow-md">
               <div className="md:flex md:mt-[9%] pt-[2%] mt-[30%]">
                 <div className="flex flex-col items-center justify-start w-full">
@@ -93,7 +93,7 @@ const FrameOnePage = () => {
                 </div>
               </div>
 
-              <div className="md:flex text-center items-center mb-[5%] mt-[5%] w-[100%] pb-[9%]">
+              <div className="md:flex text-center items-cente mt-[5%] w-[100%] pb-[9%]">
                 <div className=" md:w-[60%] w-[100%]">
                   <Button
                     className="font-semibold leading-[normal] w-[90%] md:text-3xl sm:text-[28px] text-[20px] text-center"

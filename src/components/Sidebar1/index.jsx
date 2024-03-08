@@ -3,7 +3,6 @@
 // import { Img, Text } from "components";
 // import sidebarOverlay from "components/togglesidebar";
 
-
 // const Sidebar1 = (props) => {
 //   const { collapseSidebar, collapsed } = useProSidebar();
 //   const [isMobile, setIsMobile] = useState(false);
@@ -46,7 +45,6 @@
 //   }
 
 //   // // if (isMobile && )
-
 
 //   return (
 //     <>
@@ -186,7 +184,6 @@
 
 // export default Sidebar1;
 
-
 // import React, { useState, useEffect }  from "react";
 // import { Menu, MenuItem, Sidebar, useProSidebar } from "react-pro-sidebar";
 // import { Img, Text } from "components";
@@ -202,9 +199,6 @@
 //             element.classList.toggle("hidden", collapsed);
 //           });
 //         }
-
-
-
 
 //   const handleClick = () => {
 //     // Toggle the state to show/hide the component
@@ -246,7 +240,6 @@
 //     );
 //   }
 //   /* Open when someone clicks on the span element */
-
 
 //   return (
 //     <>
@@ -388,11 +381,6 @@
 
 // export default Sidebar1;
 
-
-
-
-
-
 // import React, { useState, useEffect } from "react";
 // import { Menu, MenuItem, Sidebar, useProSidebar } from "react-pro-sidebar";
 // import { Img, Text } from "components";
@@ -408,7 +396,6 @@
 //   }
 //   const [isMobile, setIsMobile] = useState(false);
 //   const [showComponent, setShowComponent] = useState(false);
-  
 
 //   useEffect(() => {
 //     const handleResize = () => {
@@ -433,129 +420,129 @@
 //         onClick={() => collapseSidebar(!collapsed)}
 //         className={`umat-logo ${props.className}`}
 //       >
-        // <div className="">
-        //   <Img
-        //     className="cursor-pointer umat-logo md:h-auto mt-[5%] ml-[85%] object-cover w-[29px] "
-        //     src="images/left-arrow.png"
-        //     alt="lessthan"
-        //   />
-        //   <Menu
-        //     menuItemStyles={{
-        //       button: {
-        //         padding: "0 5%",
-        //         gap: "12px",
-        //         margin: "0 0 10%",
-        //         color: "#ffffff",
-        //         fontWeight: 700,
-        //         fontSize: "30px",
-        //         fontFamily: "Inika",
-        //       },
-        //     }}
-        //     className="umat-logo flex items-center justify-start mt-[10%] w-full"
-        //   >
-        //     <MenuItem
-        //       icon={
-        //         <Img
-        //           className="umat-logo common-pointer h-[20px] md:h-[29px] inset-auto object-cover relative w-full"
-        //           src="images/img_umatlogo1.png"
-        //           alt="umatlogoOne"
-        //           onClick={props?.onClick}
-        //         />
-        //       }
-        //     >
-        //       <Text className="umat-logo text-[25px] text-shadow-ts">
-        //         UMaT - TSAP
-        //       </Text>
-        //     </MenuItem>
-        //   </Menu>
+// <div className="">
+//   <Img
+//     className="cursor-pointer umat-logo md:h-auto mt-[5%] ml-[85%] object-cover w-[29px] "
+//     src="images/left-arrow.png"
+//     alt="lessthan"
+//   />
+//   <Menu
+//     menuItemStyles={{
+//       button: {
+//         padding: "0 5%",
+//         gap: "12px",
+//         margin: "0 0 10%",
+//         color: "#ffffff",
+//         fontWeight: 700,
+//         fontSize: "30px",
+//         fontFamily: "Inika",
+//       },
+//     }}
+//     className="umat-logo flex items-center justify-start mt-[10%] w-full"
+//   >
+//     <MenuItem
+//       icon={
+//         <Img
+//           className="umat-logo common-pointer h-[20px] md:h-[29px] inset-auto object-cover relative w-full"
+//           src="images/img_umatlogo1.png"
+//           alt="umatlogoOne"
+//           onClick={props?.onClick}
+//         />
+//       }
+//     >
+//       <Text className="umat-logo text-[25px] text-shadow-ts">
+//         UMaT - TSAP
+//       </Text>
+//     </MenuItem>
+//   </Menu>
 
-        //   <div className="pb-[10%] flex justify-center">
-        //     <div>
-        //       <div className="">
-        //         {collapsed && (
-        //           <div className="">
-        //             <Img
-        //               className="cursor-pointer mb-[50%] h-10 w-10"
-        //               src="images/menu-burger-new.png"
-        //               alt="menu-icon"
-        //             />
-        //           </div>
-        //         )}
-        //       </div>
+//   <div className="pb-[10%] flex justify-center">
+//     <div>
+//       <div className="">
+//         {collapsed && (
+//           <div className="">
+//             <Img
+//               className="cursor-pointer mb-[50%] h-10 w-10"
+//               src="images/menu-burger-new.png"
+//               alt="menu-icon"
+//             />
+//           </div>
+//         )}
+//       </div>
 
-        //       <Img
-        //         className="mb-[50%] h-10 w-10"
-        //         src="images/img_home.svg"
-        //         alt="home"
-        //       />
-        //      <Img
-        //           className="mb-[50%] h-10 w-10"
-        //           src="images/img_thumbsup.svg"
-        //           alt="thumbsup"
-        //         />
-        //         <Img
-        //           className="mb-[50%] h-10 w-10"
-        //           src="images/img_student.svg"
-        //           alt="student_One"
-        //         />
-        //         <Img
-        //           className="mb-[50%] h-10 w-10"
-        //           src="images/img_thumbsup_blue_gray_200.svg"
-        //           alt="thumbsup_One"
-        //         />
-        //         <Img
-        //           className="mb-[50%] h-10 w-10"
-        //           src="images/img_finance.svg"
-        //           alt="finance"
-        //         />
-        //         <Img
-        //           className="mb-[50%] h-10 w-10"
-        //           src="images/img_calendar.svg"
-        //           alt="calendar"
-        //         />
-        //     </div>
+//       <Img
+//         className="mb-[50%] h-10 w-10"
+//         src="images/img_home.svg"
+//         alt="home"
+//       />
+//      <Img
+//           className="mb-[50%] h-10 w-10"
+//           src="images/img_thumbsup.svg"
+//           alt="thumbsup"
+//         />
+//         <Img
+//           className="mb-[50%] h-10 w-10"
+//           src="images/img_student.svg"
+//           alt="student_One"
+//         />
+//         <Img
+//           className="mb-[50%] h-10 w-10"
+//           src="images/img_thumbsup_blue_gray_200.svg"
+//           alt="thumbsup_One"
+//         />
+//         <Img
+//           className="mb-[50%] h-10 w-10"
+//           src="images/img_finance.svg"
+//           alt="finance"
+//         />
+//         <Img
+//           className="mb-[50%] h-10 w-10"
+//           src="images/img_calendar.svg"
+//           alt="calendar"
+//         />
+//     </div>
 
-        //     <div className="umat-logo pl-[10%] ">
-        //       <Text
-        //           className="h-10 pt-[8%] mb-[12%] flex text-lg text-white-A700"
-        //           size="txtPoppinsMedium18"
-        //         >
-        //           Home
-        //         </Text>
-        //         <Text
-        //           className="h-10 pt-[8%] mb-[12%] text-lg text-white-A700"
-        //           size="txtPoppinsMedium18"
-        //         >
-        //           Submissions
-        //         </Text>
-        //         <Text
-        //           className="h-10 pt-[8%] mb-[12%] text-lg text-white-A700"
-        //           size="txtPoppinsMedium18"
-        //         >
-        //           Report
-        //         </Text>
-        //         <Text
-        //           className="h-10 pt-[8%] mb-[12%] text-lg text-white-A700"
-        //           size="txtPoppinsMedium18"
-        //         >
-        //           Event
-        //         </Text>
-        //         <Text
-        //           className="h-10 pt-[8%] mb-[12%] text-lg text-white-A700"
-        //           size="txtPoppinsMedium18"
-        //         >
-        //           Assignments
-        //         </Text>
-        //         <Text
-        //           className="h-10 pt-[8%] text-lg text-white-A700"
-        //           size="txtPoppinsMedium18"
-        //         >
-        //           Announcements
-        //         </Text>
-        //     </div>
-        //   </div>
-        // </div>
-      // </Sidebar>
+//     <div className="umat-logo pl-[10%] ">
+//       <Text
+//           className="h-10 pt-[8%] mb-[12%] flex text-lg text-white-A700"
+//           size="txtPoppinsMedium18"
+//         >
+//           Home
+//         </Text>
+//         <Text
+//           className="h-10 pt-[8%] mb-[12%] text-lg text-white-A700"
+//           size="txtPoppinsMedium18"
+//         >
+//           Submissions
+//         </Text>
+//         <Text
+//           className="h-10 pt-[8%] mb-[12%] text-lg text-white-A700"
+//           size="txtPoppinsMedium18"
+//         >
+//           Report
+//         </Text>
+//         <Text
+//           className="h-10 pt-[8%] mb-[12%] text-lg text-white-A700"
+//           size="txtPoppinsMedium18"
+//         >
+//           Event
+//         </Text>
+//         <Text
+//           className="h-10 pt-[8%] mb-[12%] text-lg text-white-A700"
+//           size="txtPoppinsMedium18"
+//         >
+//           Assignments
+//         </Text>
+//         <Text
+//           className="h-10 pt-[8%] text-lg text-white-A700"
+//           size="txtPoppinsMedium18"
+//         >
+//           Announcements
+//         </Text>
+//     </div>
+//   </div>
+// </div>
+// </Sidebar>
 
 //       {isMobile && ( // Render SidebarOverlay only if isMobile is true
 //         <SidebarOverlay handleClick={handleClick} showComponent={showComponent} />
@@ -566,25 +553,22 @@
 
 // export default Sidebar1;
 
-
-
 import React, { useState, useEffect } from "react";
 import { Menu, MenuItem, Sidebar, useProSidebar } from "react-pro-sidebar";
 import { Img, Text } from "components";
 import SidebarOverlay from "components/SidebarOverlay";
 
 const Sidebar1 = (props) => {
-  const { openNav} = props;
+  const { openNav } = props;
   const { collapseSidebar, collapsed } = useProSidebar();
   const [isMobile, setIsMobile] = useState(false);
 
-
-    const logoElements = document.querySelectorAll(".umat-logo");
-    if (logoElements) {
-      logoElements.forEach((element) => {
-        element.classList.toggle("hidden", collapsed);
-      });
-    }
+  const logoElements = document.querySelectorAll(".umat-logo");
+  if (logoElements) {
+    logoElements.forEach((element) => {
+      element.classList.toggle("hidden", collapsed);
+    });
+  }
 
   useEffect(() => {
     const handleResize = () => {
@@ -617,45 +601,44 @@ const Sidebar1 = (props) => {
           className={`umat-logo ${props.className}`}
         >
           <div className="flex flex-col-3 justify-around mt-[5%]">
-          
-          <div className="col-span-2 ">
-          <Menu
-            menuItemStyles={{
-              button: {
-                padding: "0 0",
-                gap: "12px",
-                margin: "0 0 10%",
-                color: "#ffffff",
-                fontWeight: 700,
-                fontSize: "30px",
-                fontFamily: "Inika",
-              },
-            }}
-            className="umat-logo flex items-center justify-start w-full"
-          >
-            <MenuItem
-              icon={
-                <Img
-                  className="umat-logo common-pointer h-[20px] md:h-[25px] inset-auto object-cover relative w-full"
-                  src="images/img_umatlogo1.png"
-                  alt="umatlogoOne"
-                  onClick={props?.onClick}
-                />
-              }
-            >
-              <Text className="umat-logo text-[25px] w-full text-shadow-ts">
-                UMaT - TSAP
-              </Text>
-            </MenuItem>
-          </Menu>
-          </div>
-          <div className="col-span-1 ">
-          <Img
-            className="cursor-pointer umat-logo md:h-auto mt-[5%]  w-[29px] "
-            src="images/left-arrow.png"
-            alt="lessthan"
-          />
-          </div>
+            <div className="col-span-2 ">
+              <Menu
+                menuItemStyles={{
+                  button: {
+                    padding: "0 0",
+                    gap: "12px",
+                    margin: "0 0 10%",
+                    color: "#ffffff",
+                    fontWeight: 700,
+                    fontSize: "30px",
+                    fontFamily: "Inika",
+                  },
+                }}
+                className="umat-logo flex items-center justify-start w-full"
+              >
+                <MenuItem
+                  icon={
+                    <Img
+                      className="umat-logo common-pointer h-[20px] md:h-[25px] inset-auto object-cover relative w-full"
+                      src="images/img_umatlogo1.png"
+                      alt="umatlogoOne"
+                      onClick={props?.onClick}
+                    />
+                  }
+                >
+                  <Text className="umat-logo text-[25px] w-full text-shadow-ts">
+                    UMaT - TSAP
+                  </Text>
+                </MenuItem>
+              </Menu>
+            </div>
+            <div className="col-span-1 ">
+              <Img
+                className="cursor-pointer umat-logo md:h-auto mt-[5%]  w-[29px] "
+                src="images/left-arrow.png"
+                alt="lessthan"
+              />
+            </div>
           </div>
 
           <div className="pb-[10%] flex justify-center">
@@ -677,77 +660,76 @@ const Sidebar1 = (props) => {
                 src="images/img_home.svg"
                 alt="home"
               />
-             <Img
-                  className="mb-[50%] h-10 w-10"
-                  src="images/img_thumbsup.svg"
-                  alt="thumbsup"
-                />
-                <Img
-                  className="mb-[50%] h-10 w-10"
-                  src="images/img_student.svg"
-                  alt="student_One"
-                />
-                <Img
-                  className="mb-[50%] h-10 w-10"
-                  src="images/img_thumbsup_blue_gray_200.svg"
-                  alt="thumbsup_One"
-                />
-                <Img
-                  className="mb-[50%] h-10 w-10"
-                  src="images/img_finance.svg"
-                  alt="finance"
-                />
-                <Img
-                  className="mb-[50%] h-10 w-10"
-                  src="images/img_calendar.svg"
-                  alt="calendar"
-                />
+              <Img
+                className="mb-[50%] h-10 w-10"
+                src="images/img_thumbsup.svg"
+                alt="thumbsup"
+              />
+              <Img
+                className="mb-[50%] h-10 w-10"
+                src="images/img_student.svg"
+                alt="student_One"
+              />
+              <Img
+                className="mb-[50%] h-10 w-10"
+                src="images/img_thumbsup_blue_gray_200.svg"
+                alt="thumbsup_One"
+              />
+              <Img
+                className="mb-[50%] h-10 w-10"
+                src="images/img_finance.svg"
+                alt="finance"
+              />
+              <Img
+                className="mb-[50%] h-10 w-10"
+                src="images/img_calendar.svg"
+                alt="calendar"
+              />
             </div>
 
             <div className="umat-logo pl-[10%] ">
               <Text
-                  className="h-10 pt-[8%] mb-[12%] flex text-lg text-white-A700"
-                  size="txtPoppinsMedium18"
-                >
-                  Home
-                </Text>
-                <Text
-                  className="h-10 pt-[8%] mb-[12%] text-lg text-white-A700"
-                  size="txtPoppinsMedium18"
-                >
-                  Submissions
-                </Text>
-                <Text
-                  className="h-10 pt-[8%] mb-[12%] text-lg text-white-A700"
-                  size="txtPoppinsMedium18"
-                >
-                  Report
-                </Text>
-                <Text
-                  className="h-10 pt-[8%] mb-[12%] text-lg text-white-A700"
-                  size="txtPoppinsMedium18"
-                >
-                  Event
-                </Text>
-                <Text
-                  className="h-10 pt-[8%] mb-[12%] text-lg text-white-A700"
-                  size="txtPoppinsMedium18"
-                >
-                  Assignments
-                </Text>
-                <Text
-                  className="h-10 pt-[8%] text-lg text-white-A700"
-                  size="txtPoppinsMedium18"
-                >
-                  Announcements
-                </Text>
+                className="h-10 pt-[8%] mb-[12%] flex text-lg text-white-A700"
+                size="txtPoppinsMedium18"
+              >
+                Home
+              </Text>
+              <Text
+                className="h-10 pt-[8%] mb-[12%] text-lg text-white-A700"
+                size="txtPoppinsMedium18"
+              >
+                Submissions
+              </Text>
+              <Text
+                className="h-10 pt-[8%] mb-[12%] text-lg text-white-A700"
+                size="txtPoppinsMedium18"
+              >
+                Report
+              </Text>
+              <Text
+                className="h-10 pt-[8%] mb-[12%] text-lg text-white-A700"
+                size="txtPoppinsMedium18"
+              >
+                Event
+              </Text>
+              <Text
+                className="h-10 pt-[8%] mb-[12%] text-lg text-white-A700"
+                size="txtPoppinsMedium18"
+              >
+                Assignments
+              </Text>
+              <Text
+                className="h-10 pt-[8%] text-lg text-white-A700"
+                size="txtPoppinsMedium18"
+              >
+                Announcements
+              </Text>
             </div>
           </div>
-        
         </Sidebar>
       )}
-
-      {isMobile && <SidebarOverlay />} {/* Render SidebarOverlay only if isMobile is true */}
+      {isMobile && <SidebarOverlay />}{" "}
+      {/* Render SidebarOverlay only if isMobile is true */}
     </div>
   );
 };

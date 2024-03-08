@@ -40,7 +40,7 @@ function StudentProfile() {
         />
       </div>
       {isDropdownVisible && (
-        <div ref={dropdownRef} className="absolute top-16 right-2 bg-slate-50 rounded-md shadow-md p-2">
+        <div ref={dropdownRef} className="absolute above-all top-16 right-2 bg-slate-50 rounded-md shadow-md p-2">
           <ul className="text-gray-500">
             <li>
               <a href="#">User</a>
