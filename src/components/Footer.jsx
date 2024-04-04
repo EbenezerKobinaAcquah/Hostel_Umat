@@ -2,7 +2,7 @@ import React from "react"
 
 
 function Footer(){
-    return <footer className="w-full mt-10 fixed md:relative bottom-0 left-0">
+    return <footer className="w-full mt-10 fixed md:relative  bottom-0 left-0">
             <section class="bg-white-A700">
               <div class="max-w-screen-l px-4 mx-auto space-y-1  overflow-hidden sm:px-6 lg:px-8">
                 <nav class=" flex flex-wrap justify-center mt-10">

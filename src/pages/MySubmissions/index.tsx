@@ -98,14 +98,14 @@ const SubmissionList: React.FC = () => {
   return (
     <>
       <div className=" flex flex-col-3 md:h-full page-content bg-white-A700 font-inika mx-auto relative w-full">
-        <div className="md:relative col-span-1 ">
+        <div className="md:relative col-span-1">
           <Sidebar1
             openNav={openNav}
             className="h-full bg-teal-900 flex justify-start left-[0] top-[0]"
           />
         </div>
 
-        <div className="relative bg-gray-100 col-span-2 items-center justify-start  md:ml-[0] w-full">
+        <div className="relative bg-gray-100 col-span-2 items-center justify-start  h-full md:ml-[0] w-full">
           <div className="md:mb-[10%] mb-[20%]">
             <StudentProfile />
           </div>
@@ -115,7 +115,7 @@ const SubmissionList: React.FC = () => {
               <div className=" md:ml-[80%] pr-5 pt-5  ">
                 <input type="text" onChange={handleFilter} />
               </div>
-              <div style={{ minHeight: "400px" }}> {/* Set a minimum height */}
+              <div style={{ minHeight: "60vh" }}> {/* Set a minimum height */}
               <DataTable
                 columns={columns}
                 data={records}
