@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 import { Menu, MenuItem } from "react-pro-sidebar";
 
@@ -7,26 +7,31 @@ import Sidebar1 from "components/Sidebar1";
 import StudentProfile from "components/StudentProfile";
 import SidebarOverlay from "components/SidebarOverlay";
 import Footer from "components/Footer";
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
+
 
 const FrameOnePage = () => {
-  function handleNavigate() {
-    const win = window.open("https://umat.edu.gh", "_blank");
-    win.focus();
-  }
-  const navigate = useNavigate();
-  const handleMySubmissionsClick = () => {
-    // Navigate to the new page when the button is clicked
-    navigate("/MySubmissions");
-  };
-  const handleReports = () => {
-    navigate("/Reports")
-  }
+ 
+
   const [isOpen, setIsOpen] = useState(false);
+  const navigate = useNavigate();
+
 
   const openNav = () => {
     setIsOpen(true);
   };
+
+  const handleMySubmissionsClick = () => {
+    // Navigate to the new page when the button is clicked
+    navigate("/MySubmissions");
+  };
+
+  const handleReports = () => {
+    navigate("/Reports");
+  };
+
+
+  
   return (
     <>
       <div className="flex flex-col-3 page-content bg-white-A700 font-inika mx-auto relative w-full">
