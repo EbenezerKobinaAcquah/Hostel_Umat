@@ -284,3 +284,56 @@ tr:nth-child(odd) {background-color: #f2f2f2;}
   overflow-y: auto;
 }
 
+
+.bg-image{
+  background-image: url(https://www.villahostels.com/wp-content/uploads/villa-hostel-nice-france-accommodation-twin-room-en-suite.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.header{
+  font-size: 48px;
+  font-weight: 700;
+  color: whitesmoke;
+  font-family: "Lora", serif;
+  text-align: center;
+}
+
+.align{
+  color: white;
+  font-family: "Lato", sans-serif;
+  font-size: 18px;
+  text-align: center;
+}
+
+.login{
+  color: #696969;
+  background-color: #f3f7ff;
+  font-family: "Lato", sans-serif;
+  font-size: 14px;
+}
+
+.link-labels{
+  font-size: 15px;
+  color: #2f3045;
+  font-weight: 600;
+}
+
+.search-box{
+  background-color: #637db3;
+}
+
+.big-searchBox{
+  text-align: center;
+}
+
+.primary-color{
+  background-color: #924dff;
+}
+
+.login2{
+  color: #696969;
+  font-family: "Lato", sans-serif;
+  font-size: 14px;
+}
