@@ -355,6 +355,13 @@ tr:nth-child(odd) {background-color: #f2f2f2;}
   
 }
 
+.thin-line-longer{
+  width: 1px;
+  height: 200px;
+  background-color: rgba(105, 105, 105, 0.2);
+  
+}
+
 .thin-line-horizontal{
   width: 100%;
   height: 1px;
@@ -377,6 +384,6 @@ tr:nth-child(odd) {background-color: #f2f2f2;}
   font-family: "Laso", sans-serif;
 }
 
-.hostel-location{
-
+.text-color-white{
+  color: white;
 }
