@@ -2,12 +2,13 @@ import React from 'react';
 
 const HostelComponent = ({ image, name, location, price, amenities }) => {
   return (
-    <div className="flex items-center justify-center space-x-4 p-4 bg-white shadow-md rounded-lg">
-      <img src={image} alt={name} className="w-100 h-100 object-cover rounded-md" />
-      <div>
-        <h2 className="text-lg font-semibold">{name}</h2>
-        <p className="text-gray-500">{location}</p>
-        <p className="text-gray-700">Price: ${price}/night</p>
+    <div className=" ">
+    <div className='flex  space-x-8 p-8 bg-color'>
+      <img src={image} alt={name} className="w-96 h-64 object-cover rounded-sm" />
+      <div className=' '>
+        <h2 className="bottom-headings mb-2">{name}</h2>
+        <p className="text-gray-500 login2 mb-2">{location}</p>
+        <p className="bottom-headings"> GH₵{price}</p>
         <ul className="mt-2">
           {amenities.map((amenity, index) => (
             <li key={index} className="flex items-center space-x-1">
@@ -19,6 +20,7 @@ const HostelComponent = ({ image, name, location, price, amenities }) => {
           ))}
         </ul>
       </div>
+      </div>
     </div>
   );
 };
@@ -29,7 +31,7 @@ const HostelList = () => {
       id: 1,
       image: 'images/hostel4.jpeg',
       name: 'Hostel 1',
-      location: 'Umat Campus',
+      location: 'Hostel Location',
       price: 20,
       amenities: ['Free Wi-Fi', 'Breakfast included', '24/7 Security']
     },

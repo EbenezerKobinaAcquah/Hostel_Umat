@@ -116,7 +116,7 @@ function Login() {
               className="w-[80%] h-20 px-4 py-2 rounded-full border border-gray-300 focus:outline-none focus:border-blue-500 center"
               placeholder=""
             ></input>
-             <div className="primary-color absolute top-[55%] right-[10%] w-16 h-20 rounded-full flex justify-center items-center cursor-pointer">
+            <div className="primary-color absolute top-[55%] right-[10%] w-16 h-20 rounded-full flex justify-center items-center cursor-pointer">
               <img src="images/search-icon1.png" className=""></img>
             </div>
             <div className="absolute inset-y-0 right-[15%] flex items-center pr-3">
@@ -135,15 +135,54 @@ function Login() {
               </svg>
             </div>
             <div>
-              {/* <div>
-              <div className="absolute top-[59%] left-[12%] rounded-full flex justify-center items-center cursor-pointer">
-              <img src="images/search-icon2.png" className="w-5 h-5 "></img>
-              <div className="">
-              <p className="">Location</p>
-              <p className="login2">Browse locations of Hostels</p>
+              <div>
+                <div className="absolute top-[57%] left-[11%] rounded-full flex justify-center items-center cursor-pointer">
+                  <img src="images/search-icon2.png" className="w-5 h-5"></img>
+                  <div className="right-start">
+                    <p className="p-1 black-color1">Location</p>
+                    <input
+                      placeholder="Browse Hostel locations"
+                      className="login2 p-1"
+                    ></input>
+                  </div>
+                  <div className="thin-line ml-10 mr-10"></div>
+                </div>
+
+                <div className="absolute top-[57%] left-[31%] rounded-full flex justify-center items-center cursor-pointer">
+                  <img src="images/search-icon2.png" className="w-5 h-5"></img>
+                  <div className="right-start">
+                    <p className="p-1 black-color1">Location</p>
+                    <input
+                      placeholder="Browse Hostel locations"
+                      className="login2 p-1"
+                    ></input>
+                  </div>
+                  <div className="thin-line ml-10 mr-10"></div>
+                </div>
+
+                <div className="absolute top-[57%] left-[51%] rounded-full flex justify-center items-center cursor-pointer">
+                  <img src="images/search-icon2.png" className="w-5 h-5"></img>
+                  <div className="right-start">
+                    <p className="p-1 black-color1">Location</p>
+                    <input
+                      placeholder="Browse Hostel locations"
+                      className="login2 p-1"
+                    ></input>
+                  </div>
+                  <div className="thin-line ml-10 mr-10"></div>
+                </div>
+
+                <div className="absolute top-[57%] left-[71%] rounded-full flex justify-center items-center cursor-pointer">
+                  <img src="images/search-icon2.png" className="w-5 h-5"></img>
+                  <div className="right-start">
+                    <p className="p-1 black-color1">Location</p>
+                    <input
+                      placeholder="Browse Hostel locations"
+                      className="login2 p-1"
+                    ></input>
+                  </div>
+                </div>
               </div>
-            </div>
-              </div> */}
             </div>
           </div>
         </div>
@@ -157,159 +196,276 @@ function Login() {
           
         </div>
       </div> */}
-      <div className="flex justify-center items-center">
-        <div className="bg-gray-100 w-[30%] ">
-          <h2>Search here</h2>
-          <input
-            type="text"
-            className="w-[80%] h-10 px-4 py-2 rounded-full border border-gray-300 focus:outline-none focus:border-blue-500"
-            placeholder="Search..."
-          ></input>
+      <div className="flex justify-center items-center mt-20">
+        <div className=" w-[20%] bg-color">
+          <div className="pl-8">
+            <h2 className="bottom-headings mt-5 ">Search here</h2>
+            <input
+              type="text"
+              className="w-[80%] h-15 px-4 py-2 mt-2 mb-2 border border-gray-200 focus:outline-none focus:border-blue-500"
+              placeholder="Search..."
+            ></input>
+            <img
+              src="images/search-icon2.png"
+              className="w-5 h-5 absolute top-[95%] left-[25%]"
+            ></img>
+          </div>
 
-          <div className="mt-8 mb-8">
-            <h2>Popular filters</h2>
+          <div className="thin-line-horizontal mt-5 mb-5"></div>
+
+          <div className="mt-8 mb-8 pl-8">
+            <h2 className="bottom-headings mb-3">Popular Filters</h2>
+            <div className="checkbox-texts">
+              <div className="flex">
+                <input
+                  type="checkbox"
+                  className="border border-gray-300 w-5 h-5"
+                ></input>
+                <p className="pl-3 pb-3">Popular Hostel</p>
+              </div>
+              <div className="flex">
+                <input
+                  type="checkbox"
+                  className="border border-gray-300 w-5 h-5"
+                ></input>
+                <p className="pl-3 pb-3">Popular Hostel</p>
+              </div>
+              <div className="flex">
+                <input
+                  type="checkbox"
+                  className="border border-gray-300 w-5 h-5"
+                ></input>
+                <p className="pl-3 pb-3">Popular Hostel</p>
+              </div>
+              <div className="flex">
+                <input
+                  type="checkbox"
+                  className="border border-gray-300 w-5 h-5"
+                ></input>
+                <p className="pl-3 pb-3">Popular Hostel</p>
+              </div>
+              <div className="flex">
+                <input
+                  type="checkbox"
+                  className="border border-gray-300 w-5 h-5"
+                ></input>
+
+                <p className="pl-3">Popular Hostel</p>
+              </div>
+            </div>
+          </div>
+          <div className="thin-line-horizontal mt-5 mb-5"></div>
+
+          <div className="mt-8 mb-8 pl-8">
+            <h2 className="bottom-headings mb-3">Amenities</h2>
+            <div className="checkbox-texts">
+              <div className="flex">
+                <input
+                  type="checkbox"
+                  className="border border-gray-300 w-5 h-5"
+                ></input>
+                <p className="pl-3 pb-3">Wi-Fi</p>
+              </div>
+              <div className="flex">
+                <input
+                  type="checkbox"
+                  className="border border-gray-300 w-5 h-5"
+                ></input>
+                <p className="pl-3 pb-3">Study Room</p>
+              </div>
+              <div className="flex">
+                <input
+                  type="checkbox"
+                  className="border border-gray-300 w-5 h-5"
+                ></input>
+                <p className="pl-3 pb-3">Gym</p>
+              </div>
+              <div className="flex">
+                <input
+                  type="checkbox"
+                  className="border border-gray-300 w-5 h-5"
+                ></input>
+                <p className="pl-3 pb-3">AC</p>
+              </div>
+              <div className="flex">
+                <input
+                  type="checkbox"
+                  className="border border-gray-300 w-5 h-5"
+                ></input>
+
+                <p className="pl-3">Car Park</p>
+              </div>
+            </div>
+          </div>
+          <div className="thin-line-horizontal mt-5 mb-5"></div>
+
+          <div className="mt-8 mb-8 pl-8">
+            <h2 className="bottom-headings mb-3">Popular filters</h2>
+            <div className="checkbox-texts">
+              <div className="flex">
+                <input
+                  type="checkbox"
+                  className="border border-gray-300 w-5 h-5"
+                ></input>
+                <p className="pl-3 pb-3">Popular Hostel</p>
+              </div>
+              <div className="flex">
+                <input
+                  type="checkbox"
+                  className="border border-gray-300 w-5 h-5"
+                ></input>
+                <p className="pl-3 pb-3">Popular Hostel</p>
+              </div>
+              <div className="flex">
+                <input
+                  type="checkbox"
+                  className="border border-gray-300 w-5 h-5"
+                ></input>
+                <p className="pl-3 pb-3">Popular Hostel</p>
+              </div>
+              <div className="flex">
+                <input
+                  type="checkbox"
+                  className="border border-gray-300 w-5 h-5"
+                ></input>
+                <p className="pl-3 pb-3">Popular Hostel</p>
+              </div>
+              <div className="flex">
+                <input
+                  type="checkbox"
+                  className="border border-gray-300 w-5 h-5"
+                ></input>
+
+                <p className="pl-3">Popular Hostel</p>
+              </div>
+            </div>
+          </div>
+          <div className="thin-line-horizontal mt-5 mb-5"></div>
+
+          <div className="mt-8 mb-8 pl-8">
+            <h2 className="bottom-headings mb-3">Amenities</h2>
             <div className="flex">
-              <input type="checkbox"></input>
-              <p>Popular Hostel</p>
+              <input
+                type="checkbox"
+                className="border border-gray-300 w-5 h-5"
+              ></input>
+              <p className="pl-3 pb-3">Wi-Fi</p>
             </div>
             <div className="flex">
-              <input type="checkbox"></input>
-              <p>Popular Hostel</p>
+              <input
+                type="checkbox"
+                className="border border-gray-300 w-5 h-5"
+              ></input>
+              <p className="pl-3 pb-3">Study Room</p>
             </div>
             <div className="flex">
-              <input type="checkbox"></input>
-              <p>Popular Hostel</p>
+              <input
+                type="checkbox"
+                className="border border-gray-300 w-5 h-5"
+              ></input>
+              <p className="pl-3 pb-3">Gym</p>
             </div>
             <div className="flex">
-              <input type="checkbox"></input>
-              <p>Popular Hostel</p>
+              <input
+                type="checkbox"
+                className="border border-gray-300 w-5 h-5"
+              ></input>
+              <p className="pl-3 pb-3">AC</p>
             </div>
             <div className="flex">
-              <input type="checkbox"></input>
-              <p>Popular Hostel</p>
+              <input
+                type="checkbox"
+                className="border border-gray-300 w-5 h-5"
+              ></input>
+
+              <p className="pl-3">Car Park</p>
+            </div>
+          </div>
+          <div className="thin-line-horizontal mt-5 mb-5"></div>
+
+          <div className="mt-8 mb-8 pl-8">
+            <h2 className="bottom-headings mb-3">Popular filters</h2>
+            <div className="flex">
+              <input
+                type="checkbox"
+                className="border border-gray-300 w-5 h-5"
+              ></input>
+              <p className="pl-3 pb-3">Popular Hostel</p>
+            </div>
+            <div className="flex">
+              <input
+                type="checkbox"
+                className="border border-gray-300 w-5 h-5"
+              ></input>
+              <p className="pl-3 pb-3">Popular Hostel</p>
+            </div>
+            <div className="flex">
+              <input
+                type="checkbox"
+                className="border border-gray-300 w-5 h-5"
+              ></input>
+              <p className="pl-3 pb-3">Popular Hostel</p>
+            </div>
+            <div className="flex">
+              <input
+                type="checkbox"
+                className="border border-gray-300 w-5 h-5"
+              ></input>
+              <p className="pl-3 pb-3">Popular Hostel</p>
+            </div>
+            <div className="flex">
+              <input
+                type="checkbox"
+                className="border border-gray-300 w-5 h-5"
+              ></input>
+
+              <p className="pl-3">Popular Hostel</p>
             </div>
           </div>
 
-          <div>
-            <h2>Amenities</h2>
-            <div className="flex">
-              <input type="checkbox"></input>
-              <p>Wifi</p>
-            </div>
-            <div className="flex">
-              <input type="checkbox"></input>
-              <p>Study Room</p>
-            </div>
-            <div className="flex">
-              <input type="checkbox"></input>
-              <p>AC</p>
-            </div>
-            <div className="flex">
-              <input type="checkbox"></input>
-              <p>Gym</p>
-            </div>
-            <div className="flex">
-              <input type="checkbox"></input>
-              <p>Pool</p>
-            </div>
-          </div>
+          <div className="thin-line-horizontal mt-5 mb-5"></div>
 
-          <div className="mt-8 mb-8">
-            <h2>Popular filters</h2>
+          <div className="mt-8 mb-8 pl-8">
+            <h2 className="bottom-headings mb-3">Amenities</h2>
             <div className="flex">
-              <input type="checkbox"></input>
-              <p>Popular Hostel</p>
+              <input
+                type="checkbox"
+                className="border border-gray-300 w-5 h-5"
+              ></input>
+              <p className="pl-3 pb-3">Wi-Fi</p>
             </div>
             <div className="flex">
-              <input type="checkbox"></input>
-              <p>Popular Hostel</p>
+              <input
+                type="checkbox"
+                className="border border-gray-300 w-5 h-5"
+              ></input>
+              <p className="pl-3 pb-3">Study Room</p>
             </div>
             <div className="flex">
-              <input type="checkbox"></input>
-              <p>Popular Hostel</p>
+              <input
+                type="checkbox"
+                className="border border-gray-300 w-5 h-5"
+              ></input>
+              <p className="pl-3 pb-3">Gym</p>
             </div>
             <div className="flex">
-              <input type="checkbox"></input>
-              <p>Popular Hostel</p>
+              <input
+                type="checkbox"
+                className="border border-gray-300 w-5 h-5"
+              ></input>
+              <p className="pl-3 pb-3">AC</p>
             </div>
             <div className="flex">
-              <input type="checkbox"></input>
-              <p>Popular Hostel</p>
-            </div>
-          </div>
+              <input
+                type="checkbox"
+                className="border border-gray-300 w-5 h-5"
+              ></input>
 
-          <div>
-            <h2>Amenities</h2>
-            <div className="flex">
-              <input type="checkbox"></input>
-              <p>Wifi</p>
-            </div>
-            <div className="flex">
-              <input type="checkbox"></input>
-              <p>Study Room</p>
-            </div>
-            <div className="flex">
-              <input type="checkbox"></input>
-              <p>AC</p>
-            </div>
-            <div className="flex">
-              <input type="checkbox"></input>
-              <p>Gym</p>
-            </div>
-            <div className="flex">
-              <input type="checkbox"></input>
-              <p>Pool</p>
-            </div>
-          </div>
-
-          <div className="mt-8 mb-8">
-            <h2>Popular filters</h2>
-            <div className="flex">
-              <input type="checkbox"></input>
-              <p>Popular Hostel</p>
-            </div>
-            <div className="flex">
-              <input type="checkbox"></input>
-              <p>Popular Hostel</p>
-            </div>
-            <div className="flex">
-              <input type="checkbox"></input>
-              <p>Popular Hostel</p>
-            </div>
-            <div className="flex">
-              <input type="checkbox"></input>
-              <p>Popular Hostel</p>
-            </div>
-            <div className="flex">
-              <input type="checkbox"></input>
-              <p>Popular Hostel</p>
-            </div>
-          </div>
-
-          <div>
-            <h2>Amenities</h2>
-            <div className="flex">
-              <input type="checkbox"></input>
-              <p>Wifi</p>
-            </div>
-            <div className="flex">
-              <input type="checkbox"></input>
-              <p>Study Room</p>
-            </div>
-            <div className="flex">
-              <input type="checkbox"></input>
-              <p>AC</p>
-            </div>
-            <div className="flex">
-              <input type="checkbox"></input>
-              <p>Gym</p>
-            </div>
-            <div className="flex">
-              <input type="checkbox"></input>
-              <p>Pool</p>
+              <p className="pl-3">Car Park</p>
             </div>
           </div>
         </div>
+        
         <HostelList />
       </div>
 
