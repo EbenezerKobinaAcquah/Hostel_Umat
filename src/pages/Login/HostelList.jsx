@@ -1,6 +1,9 @@
 import React from 'react';
 
 const HostelComponent = ({ image, name, location, price, amenities, reviews }) => {
+
+
+
   return (
     <div className=" ">
     <div className='flex items-center justify-center space-x-8 p-8 bg-color'>
@@ -21,8 +24,8 @@ const HostelComponent = ({ image, name, location, price, amenities, reviews }) =
         <ul className="mt-2">
           {amenities.map((amenity, index) => (
             <li key={index} className="flex items-center space-x-1">
-              <img src='images/car-icon.png'></img>
-              <span>{amenity}</span>
+              <img src='images/car-icon.png' className='w-4 h-4 '></img>
+              <span className='mt-1 mb-1'>{amenity}</span>
             </li>
           ))}
         </ul>
