@@ -31,7 +31,7 @@ function EmailCard(){
         <button className="primary-color p-3 absolute top-14 right-3 rounded-md text-color-white">
           Subscribe
         </button>
-        <div className=" primary-color absolute top-[-110%] right-[-50%] w-20 h-20 rounded-full flex justify-center items-center cursor-pointer"></div>
+        <div className=" small-color-circle absolute top-[-90%] right-[-30%] w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"></div>
 
         <div className=" small-color-circle absolute top-[-10%] left-[-30%] w-20 h-20 rounded-full flex justify-center items-center cursor-pointer"></div>
       </div>

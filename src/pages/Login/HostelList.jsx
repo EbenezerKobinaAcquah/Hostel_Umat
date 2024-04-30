@@ -5,9 +5,9 @@ const HostelComponent = ({ image, name, location, price, amenities, reviews }) =
 
 
   return (
-    <div className=" ">
-    <div className='flex items-center justify-center space-x-8 p-8 bg-color'>
-      <img src={image} alt={name} className="w-96 h-64 object-cover rounded-sm" />
+    <div className=" w-full hostel-list">
+    <div className='flex items-center justify-center space-x-10 mb-5 p-10 bg-color'>
+      <img src={image} alt={name} className=" hostel-img object-cover rounded-sm" />
       <div className=' '>
         <h2 className="bottom-headings mb-2">{name}</h2>
         <p className="text-gray-500 login2 mb-2">{location}</p>
@@ -17,15 +17,15 @@ const HostelComponent = ({ image, name, location, price, amenities, reviews }) =
         <img src='images/star-icon.png' className='w-4 h-4'></img>
         </div>
        <p className= "login2 mb-2">{reviews}</p>
-        <p className="bottom-headings mb-2"> GH₵{price}</p>
-        <div><button className='primary-color p-3 w-[60%] rounded-md text-color-white'>Book now</button></div>
+        <p className="bottom-headings mb-2"> ₵{price}</p>
+        <div ><button className='primary-color p-4 w-[60%] rounded-md text-color-white book-now'>Book now</button></div>
         </div>
-        <div className="thin-line-longer ml-10 mr-10"></div>
-        <ul className="mt-2">
+        <div className="thin-line-longer "></div>
+        <ul className="mt-2 ">
           {amenities.map((amenity, index) => (
-            <li key={index} className="flex items-center space-x-1">
+            <li key={index} className="flex items-center space-x-4  price">
               <img src='images/car-icon.png' className='w-4 h-4 '></img>
-              <span className='mt-1 mb-1'>{amenity}</span>
+              <span className='mt-1 mb-1 w-full'>{amenity}</span>
             </li>
           ))}
         </ul>
@@ -87,7 +87,7 @@ const HostelList = () => {
   ];
 
   return (
-    <div className="grid grid-cols-1 w-[60%] p-8">
+    <div className="grid grid-cols-1 w-[70%] pl-8">
       {hostels.map(hostel => (
         <HostelComponent
           key={hostel.id}

@@ -23,7 +23,7 @@ function SelectionCheckBox(){
       ></input>
       <img
         src="images/search-icon2.png"
-        className="w-5 h-5 absolute top-[102%] left-[25%]"
+        className="w-5 h-5 absolute top-[95%] left-[19%]"
       ></img>
     </div>
 

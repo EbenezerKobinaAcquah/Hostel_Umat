@@ -293,12 +293,12 @@ tr:nth-child(odd) {background-color: #f2f2f2;}
 }
 
 .header{
-  font-size: 48px;
-  font-weight: 700;
   color: whitesmoke;
   font-family: "Lora", serif;
   text-align: center;
 }
+
+
 
 .align{
   color: white;
@@ -306,6 +306,8 @@ tr:nth-child(odd) {background-color: #f2f2f2;}
   font-size: 18px;
   text-align: center;
 }
+
+
 
 .login{
   color: #696969;
@@ -367,6 +369,7 @@ tr:nth-child(odd) {background-color: #f2f2f2;}
   height: 200px;
   background-color: rgba(105, 105, 105, 0.2);
   
+  
 }
 
 .thin-line-horizontal{
@@ -384,7 +387,7 @@ tr:nth-child(odd) {background-color: #f2f2f2;}
 }
 
 .bg-color{
-  background-color: #f5f5f5;
+  background-color: #f8f9fa;
 }
 
 .bottom-headings{
@@ -392,6 +395,12 @@ tr:nth-child(odd) {background-color: #f2f2f2;}
   color: #2f3045;
   font-weight: 700;
   
+}
+
+.price{
+  color: #2f3045;
+  font-size: 16px;
+  font-family: "Lato", sans-serif;
 }
 
 .checkbox-texts{
@@ -448,3 +457,16 @@ footer{
   font-family: "Lato", sans-serif;
 }
 
+.hostel-img{
+  width: 400px;
+  height: 250px;
+}
+
+.book-now{
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.hostel-list{
+  min-height: 80%;
+}
