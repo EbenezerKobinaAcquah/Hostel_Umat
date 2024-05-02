@@ -185,7 +185,7 @@ function MainDashboard() {
        
       </div>
 
-      <div className=" md:h-96 bg-image pt-10 md:pt-20 pb-10 md:0">
+      <div className="relative md:h-96 bg-image pt-10 md:pt-20 pb-10 md:0">
         <div className="">
           <div className="">
             <h2 className="md:pb-10 pb-4 md:text-5xl header text-2xl font-bold">
@@ -197,19 +197,19 @@ function MainDashboard() {
             </p>
           </div>
         </div>
-        <div className=" w-[100%] mt-12 h-full big-searchBox pb-10">
+        <div className="relative w-[100%] mt-12 h-full big-searchBox pb-10">
           <input
             type="text"
-            className="w-[80%] md:h-20  h-80 px-4  md:rounded-full rounded-md border border-gray-300 focus:outline-none focus:border-blue-500 center"
+            className="w-[80%] md:h-20  h-80 px-4  md:rounded-full rounded-sm border border-gray-300 focus:outline-none focus:border-blue-500 center"
             placeholder=""
           ></input>
-          <div className="primary-color absolute md:top-[55%] md:right-[10%] md:w-16 md:h-20 w-[80%] ml-[10%] md:ml-0   h-10 md:rounded-full flex justify-center items-center cursor-pointer">
+          <div className="primary-color absolute md:top-[55%] md:right-[10%] md:w-16 md:h-20 w-[80%] ml-[10%] md:ml-0 h-8 md:rounded-full flex justify-center items-center cursor-pointer">
             <img src="images/search-icon1.png" className=""></img>
           </div>
 
           <div>
             <div className="mb-10 md:mb-0">
-              <div className="absolute md:top-[57%] md:left-[11%] top-[35%] left-[12%] rounded-full flex justify-center items-center cursor-pointer">
+              <div className="absolute md:top-[5%] md:left-[11%] top-[5%] left-[12%] rounded-full flex justify-center items-center cursor-pointer">
                 <img
                   src="images/search-icon2.png"
                   className="w-5 h-5"
@@ -226,10 +226,10 @@ function MainDashboard() {
                     onBlur={handleBlur}
                   />
                 </div>
-                <div className="thin-line ml-10 mr-10"></div>
+                <div className="hidden md:block thin-line ml-10 mr-10"></div>
               </div>
 
-              <div className="absolute  md:top-[57%] md:left-[31%] top-[45%] left-[12%] rounded-full flex justify-center items-center cursor-pointer">
+              <div className="absolute  md:top-[5%] md:left-[31%] top-[25%] left-[12%] rounded-full flex justify-center items-center cursor-pointer">
                 <img
                   src="images/search-icon2.png"
                   className="w-5 h-5"
@@ -246,10 +246,10 @@ function MainDashboard() {
                     onBlur={handleBlur}
                   />
                 </div>
-                <div className="thin-line ml-10 mr-10"></div>
+                <div className="hidden md:block thin-line ml-10 mr-10"></div>
               </div>
 
-              <div className="absolute  md:top-[57%] md:left-[51%] top-[55%] left-[12%] rounded-full flex justify-center items-center cursor-pointer">
+              <div className="absolute  md:top-[5%] md:left-[51%] top-[45%] left-[12%] rounded-full flex justify-center items-center cursor-pointer">
                 <img
                   src="images/search-icon2.png"
                   className="w-5 h-5"
@@ -266,9 +266,10 @@ function MainDashboard() {
                     onBlur={handleBlur}
                   />
                 </div>
+                <div className="hidden md:block thin-line ml-10 mr-10"></div>
               </div>
 
-              <div className="absolute  md:top-[57%] md:left-[71%] top-[65%] left-[12%] rounded-full flex justify-center items-center cursor-pointer">
+              <div className="absolute  md:top-[5%] md:left-[71%] top-[65%] left-[12%] rounded-full flex justify-center items-center cursor-pointer">
                 <img
                   src="images/search-icon2.png"
                   className="w-5 h-5"

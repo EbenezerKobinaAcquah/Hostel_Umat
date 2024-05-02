@@ -5,8 +5,8 @@ const HostelComponent = ({ image, name, location, price, amenities, reviews }) =
 
 
   return (
-    <div className=" w-full hostel-list">
-    <div className='flex items-center justify-center space-x-10 mb-5 p-10 bg-color'>
+    <div className= "w-full hostel-list">
+    <div className='md:flex items-center justify-center md:space-x-10 space-y-10 mb-5 md:p-10 bg-color w-[100%] '>
       <img src={image} alt={name} className=" hostel-img object-cover rounded-sm" />
       <div className=' '>
         <h2 className="bottom-headings mb-2">{name}</h2>
@@ -19,8 +19,9 @@ const HostelComponent = ({ image, name, location, price, amenities, reviews }) =
        <p className= "login2 mb-2">{reviews}</p>
         <p className="bottom-headings mb-2"> ₵{price}</p>
         <div ><button className='primary-color p-4 w-[60%] rounded-md text-color-white book-now'>Book now</button></div>
+        
         </div>
-        <div className="thin-line-longer "></div>
+        <div className="hidden md:block thin-line-longer "></div>
         <ul className="mt-2 ">
           {amenities.map((amenity, index) => (
             <li key={index} className="flex items-center space-x-4  price">
@@ -87,7 +88,7 @@ const HostelList = () => {
   ];
 
   return (
-    <div className="grid grid-cols-1 w-[70%] pl-8">
+    <div className="grid grid-cols-1 w-[100%] md:pl-8 pl-0">
       {hostels.map(hostel => (
         <HostelComponent
           key={hostel.id}

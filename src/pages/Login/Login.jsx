@@ -20,9 +20,9 @@ function Login() {
   };
 
   return (
-    <div className=" overall-container">
+    <div className="overall-container">
       <MainDashboard />
-      <div className="flex justify-center w-full mt-20 ">
+      <div className="md:flex w-full justify-center w-full mt-20 pl-[10%] pr-[10%]">
         <SelectionCheckBox />
         <HostelList />
       </div>

@@ -12,7 +12,7 @@ function EmailCard(){
       setFocusedInput(null);
     };
 
-    return  <div className="primary-color design-before-footer flex justify-center items-center mb-32 mt-24 ">
+    return  <div className=" primary-color design-before-footer flex justify-center items-center rounded-md mb-20 mt-24 ">
     <div>
       <h2 className="text-color-white subscribe mb-3">
         Subscribe for the latest deals
@@ -23,17 +23,17 @@ function EmailCard(){
       <div className="relative">
         <input
           type="text"
-          className="mt-12 mb-5 w-[100%] h-16 px-4 py-2 mt-2 mb-2 border border-gray-200 focus:outline-none focus:border-blue-500 rounded-sm shadow-lg email-bar"
+          className="md:mt-12 mt-5 mb-5 w-[90%] md:w-[100%] md:h-16 h-10 px-4 py-1 ml-[5%] md:ml-0 mb-4 border border-gray-200 focus:outline-none focus:border-blue-500 rounded-sm shadow-lg email-bar"
           placeholder={focusedInput === 7 ? '' : 'Email Address'}
           onFocus={() => handleFocus(7)}
         onBlur={handleBlur}
         />
-        <button className="primary-color p-3 absolute top-14 right-3 rounded-md text-color-white">
+        <button className="relative primary-color ml-[32%] md:ml-0 p-5 md:p-3 md:absolute md:top-14 md:right-3 button-orange-color rounded-md text-color-white">
           Subscribe
         </button>
-        <div className=" small-color-circle absolute top-[-90%] right-[-30%] w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"></div>
+        <div className="hidden small-color-circle md:block absolute top-[-80%] right-[-30%] w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"></div>
 
-        <div className=" small-color-circle absolute top-[-10%] left-[-30%] w-20 h-20 rounded-full flex justify-center items-center cursor-pointer"></div>
+        <div className="hidden small-color-circle md:block absolute top-[-10%] left-[-30%] w-20 h-20 rounded-full flex justify-center items-center cursor-pointer"></div>
       </div>
     </div>
   </div>

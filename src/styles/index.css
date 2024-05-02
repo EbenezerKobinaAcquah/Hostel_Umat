@@ -418,9 +418,18 @@ tr:nth-child(odd) {background-color: #f2f2f2;}
 
 .design-before-footer{
   margin: auto;
+  height: 100%;
+  width: 90%;
+  padding: 20px;
+  
+}
+
+@media screen and (min-width: 768px){
+  .design-before-footer{
+  margin: auto;
   height: 300px;
   width: 900px;
-  
+  }
 }
 
 .subscribe{
@@ -457,11 +466,18 @@ footer{
   font-family: "Lato", sans-serif;
 }
 
-.hostel-img{
-  width: 400px;
-  height: 250px;
+@media screen and (min-width: 768px){
+  .hostel-img{
+    width: 400px;
+    height: 250px;
+  }
+
 }
 
+.hostel-img{
+  width: 400px;
+  height: 300px;
+}
 .book-now{
   font-weight: 600;
   font-size: 16px;
@@ -470,3 +486,18 @@ footer{
 .hostel-list{
   min-height: 80%;
 }
+
+@media screen and (max-width: 768px){
+.button-orange-color{
+background-color: orangered;
+}
+.subscribe{
+  font-size: 23px;
+ 
+}
+.sign-up{
+  font-size: 15px;
+}
+
+}
+

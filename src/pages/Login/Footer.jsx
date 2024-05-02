@@ -2,9 +2,9 @@ import React, {useState} from "react";
 
 function NewFooter (){
     return <footer className="footer-container ">
-    <div className="flex p-[5%]">
-      <div className=" w-[40%] mr-[10%]">
-        <div className="mb-5">
+    <div className="md:flex p-[5%]">
+      <div className=" md:w-[40%] mr-[10%]">
+        <div className="mb-5 mt-10 md:mt-0">
           <img
             src="images/Bootstrap_logo.svg.png"
             className="w-16 h-12"
@@ -44,8 +44,8 @@ function NewFooter (){
         </div>
       </div>
 
-      <div className="w-[20%] ">
-        <h2 className="mb-5">Company</h2>
+      <div className="md:w-[20%] mt-10 md:mt-0 ">
+        <h2 className="mb-3 md:mb-5">Company</h2>
         <div className="footer-content">
           <a>
             <p className="mb-3">About us </p>
@@ -65,8 +65,8 @@ function NewFooter (){
         </div>
       </div>
 
-      <div className="w-[20%]">
-        <h2 className="mb-5">Destinations</h2>
+      <div className="md:w-[20%] mt-5 md:mt-0">
+        <h2 className="mb-3 md:mb-5">Destinations</h2>
         <div className="footer-content">
           <a>
             <p className="mb-3">Tarkwa </p>
@@ -86,8 +86,8 @@ function NewFooter (){
         </div>
       </div>
 
-      <div className="w-[20%]">
-        <h2 className="mb-5">Contact Us</h2>
+      <div className="md:w-[20%]">
+        <h2 className="mb-3 md:mb-5 mt-5 md:mt-0">Contact Us</h2>
         <div className="footer-content">
           <a>
             <p className="mb-3">Tarkwa </p>
@@ -107,7 +107,7 @@ function NewFooter (){
         </div>
       </div>
     </div>
-    <div className="thin-line-horizontal-footer mt-5 mb-5"></div>
+    <div className="thin-line-horizontal-footer mt-1 mb-1"></div>
 
     <p className="footer-content big-searchBox p-4">
       © 2024 - UMaT-hostels | All rights reserved

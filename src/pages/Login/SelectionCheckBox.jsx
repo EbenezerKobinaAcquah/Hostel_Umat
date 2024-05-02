@@ -11,8 +11,8 @@ function SelectionCheckBox(){
     const handleBlur = () => {
       setFocusedInput(null);
     };
-    return <div className=" w-[20%] bg-color">
-    <div className="pl-8">
+    return <div className=" w-[100%] md:w-[20%] bg-color">
+    <div className="pl-8 relative">
       <h2 className="bottom-headings mt-5 ">Search here</h2>
       <input
         type="text"
@@ -23,7 +23,7 @@ function SelectionCheckBox(){
       ></input>
       <img
         src="images/search-icon2.png"
-        className="w-5 h-5 absolute top-[95%] left-[19%]"
+        className="w-5 h-5 absolute md:top-[95%] top-[50%] md:left-[19%] left-[70%]"
       ></img>
     </div>
 
