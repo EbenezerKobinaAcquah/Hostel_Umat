@@ -286,10 +286,11 @@ tr:nth-child(odd) {background-color: #f2f2f2;}
 
 
 .bg-image{
-  background-image: url(https://www.villahostels.com/wp-content/uploads/villa-hostel-nice-france-accommodation-twin-room-en-suite.jpg);
+  background-image: url(https://www.villahostels.com/wp-content/uploads/private-double-en-suite-hostel-nice-france-accommodation.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
+  height: 500px;
 }
 
 .header{
@@ -306,7 +307,6 @@ tr:nth-child(odd) {background-color: #f2f2f2;}
   font-size: 18px;
   text-align: center;
 }
-
 
 
 .login{
@@ -338,6 +338,7 @@ tr:nth-child(odd) {background-color: #f2f2f2;}
   color: #696969;
   font-family: "Lato", sans-serif;
   font-size: 16px;
+  
 }
 
 .amenities{
@@ -397,6 +398,8 @@ tr:nth-child(odd) {background-color: #f2f2f2;}
   
 }
 
+
+
 .price{
   color: #2f3045;
   font-size: 16px;
@@ -412,7 +415,7 @@ tr:nth-child(odd) {background-color: #f2f2f2;}
 }
 
 .footer-container{
-  background-color: #25283a;
+  background-color: #252525;
   
 }
 
@@ -466,13 +469,9 @@ footer{
   font-family: "Lato", sans-serif;
 }
 
-@media screen and (min-width: 768px){
-  .hostel-img{
-    width: 400px;
-    height: 250px;
-  }
 
-}
+
+
 
 .hostel-img{
   width: 400px;
@@ -501,3 +500,114 @@ background-color: orangered;
 
 }
 
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 1%;
+  z-index: 1000; /* Ensure it appears above other content */
+  background-color: white; /* Optional: Change background color as needed */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Add shadow for better visibility */
+}
+
+.overlap{
+  z-index: 2000;
+}
+
+
+
+
+
+
+.active-button{
+  color: #004c23;
+}
+
+.labels{
+  font-size: 14px;
+  font-weight: 600;
+  color: #2f3045;
+  font-family: "Lato", sans-serif;
+}
+
+.hostel-names{
+  font-size: 23px;
+  margin-bottom: 8px;
+  color: #2f3045;
+  font-weight: 700;
+  font-family: "Lora", serif;
+}
+
+.new-price{
+  font-size: 20px;
+  font-weight: 700;
+  color: #2f3045;
+}
+
+            
+.hostel-profile{
+  font-size: 16px;
+  color: #696969;
+  font-family: "Lato", sans-serif;
+}
+
+.line-height{
+  line-height: 1.8;
+}
+
+@media screen and (min-width: 768px){
+  .hostel-img{
+    width: 400px;
+    height: 250px;
+  }
+  .big-screen-labels{
+    font-size: 18px;
+    font-weight: 600;
+  }
+  .labels{
+    font-size: 18px;
+    font-weight: 600;
+    color: #2f3045;
+    font-family: "Lato", sans-serif;
+  }
+
+ .hostel-names{
+    font-size: 35px;
+   
+  }
+  .login2{
+    color: #696969;
+    font-family: "Lato", sans-serif;
+    font-size: 18px;
+    line-height: 1.8;
+  }
+  .new-price{
+    font-size: 25px;
+    font-weight: 700;
+    
+  }
+  .hostel-profile{
+    font-size: 17px;
+  }
+  .hostel-manager{
+    font-size: 20px;
+    font-weight: 700;
+
+  }
+
+  .ori-hostel-manager{
+    font-size: 16px;
+    font-family: "Lato", sans-serif;
+  }
+
+}
+
+.hostel-manager{
+  font-size: 16px;
+  font-weight: 600;
+
+}
+
+.green-color{
+  background-color: #004C23;
+}

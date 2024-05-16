@@ -65,6 +65,7 @@ import MySubmissions from "pages/MySubmissions";
 import ReportsPage from "pages/Reports";
 import Login from "pages/Login/Login";
 import AuthGuard from "pages/AuthGuard/AuthGuard";
+import HostelPages from "pages/HostelPages/HostelPages";
 
 const ProjectRoutes = () => {
   const isAuthenticated = localStorage.getItem("token"); // Get the authentication state from your application
@@ -76,6 +77,7 @@ const ProjectRoutes = () => {
     
         <Route path="/" element={<Login />} />
         <Route path="/Login" element={<Login />} />
+        <Route path="/HostelPages" element={<HostelPages />} />
 <Route
   path="/Frameone"
   element={<AuthGuard isAuthenticated={isAuthenticated}><FrameOne /></AuthGuard>}

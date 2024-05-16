@@ -6,8 +6,8 @@ function NewFooter (){
       <div className=" md:w-[40%] mr-[10%]">
         <div className="mb-5 mt-10 md:mt-0">
           <img
-            src="images/Bootstrap_logo.svg.png"
-            className="w-16 h-12"
+            src="images/img_umatlogo1.png"
+            className="w-12 h-12"
           ></img>
         </div>
         <div className="mb-5 footer-content ">

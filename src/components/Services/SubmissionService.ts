@@ -24,13 +24,4 @@ export const SubmissionService = {
         return response.json();
     }
 
-    // getSubmissionById: async (id: number): Promise<Submission> => {
-    //     const response = await fetch(`${API_URL}/submissions/${id}`);
-    //     if (!response.ok) {
-    //         throw new Error(`Failed to fetch submission with id ${id}`);
-    //     }
-    //     return response.json();
-    // },
-
-    // Add more methods for creating, updating, or deleting submissions as needed
-};
+   };

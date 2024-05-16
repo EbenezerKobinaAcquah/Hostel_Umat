@@ -16,14 +16,14 @@ function SelectionCheckBox(){
       <h2 className="bottom-headings mt-5 ">Search here</h2>
       <input
         type="text"
-        className="w-[80%] h-15 px-4 py-2 mt-2 mb-2 border border-gray-200 focus:outline-none focus:border-blue-500"
+        className="w-[90%] h-15 px-4 py-2 mt-2 mb-2 border border-gray-200 focus:outline-none focus:border-blue-500"
         placeholder={focusedInput === 6 ? "" : "Search..."}
         onFocus={() => handleFocus(6)}
         onBlur={handleBlur}
       ></input>
       <img
         src="images/search-icon2.png"
-        className="w-5 h-5 absolute md:top-[95%] top-[50%] md:left-[19%] left-[70%]"
+        className="w-5 h-5 absolute md:top-[50%] top-[50%] md:left-[80%] left-[70%]"
       ></img>
     </div>
 

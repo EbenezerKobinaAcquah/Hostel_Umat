@@ -28,6 +28,78 @@ export interface Submission {
   submissionHistories: SubmissionHistory[]
 }
 
+export interface Building {
+  id: number
+  name: string
+  buildingType?: BuildingType
+  ownershipType?: OwnershipType
+  genderOption?: Gender
+  geolocation?: Geolocation
+  address: string
+  description?: string 
+  picture:string,
+  reviews:string,
+  priceRange:string,
+  amenities?: string[]
+
+}
+
+export interface Floor{
+  id:number,
+  buildingId: number,
+  floorNumber: number,
+  description: string,
+  rooms:Room[]
+}
+
+export interface Room{
+  id: number,
+  roomNumber: number,
+  roomType:RoomType
+}
+
+export interface RoomType{
+  id:number,
+  buildingId:number,
+  name: string,
+  price: number,
+  amenities: Ammenity[]
+}
+
+export interface Ammenity{
+  id:number,
+  roomId: number,
+  name:string
+}
+
+enum BuildingType {
+  hostel =1,
+  apartment,
+  facility 
+}
+
+enum OwnershipType{
+  public =1 ,
+  private
+}
+
+enum Gender{
+  male = 1,
+  female,
+  mixed
+}
+
+export interface Picture{
+  path: string
+}
+
+export interface Geolocation {
+  longitude: string,
+  latitude: string
+}
+
+
+
 export interface Student {
   studentNumber: string
   indexNumber: string

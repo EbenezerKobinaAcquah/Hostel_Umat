@@ -19,15 +19,17 @@ function Login() {
     setFocusedInput(null);
   };
 
+
+
+
   return (
     <div className="overall-container">
       <MainDashboard />
-      <div className="md:flex w-full justify-center w-full mt-20 pl-[10%] pr-[10%]">
-        <SelectionCheckBox />
-        <HostelList />
+      <div className="md:flex w-full justify-center w-full mt-20 pl-[10%] pr-[10%] mb-20">
+        
       </div>
 
-      <EmailCard />
+      {/* <EmailCard /> */}
 
       <NewFooter />
     </div>
