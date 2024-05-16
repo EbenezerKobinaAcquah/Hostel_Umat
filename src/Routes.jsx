@@ -63,7 +63,7 @@ import NotFound from "pages/NotFound";
 import FrameOne from "pages/FrameOne";
 import MySubmissions from "pages/MySubmissions";
 import ReportsPage from "pages/Reports";
-import Login from "pages/Login/Login";
+import Login from "pages/Login";
 import AuthGuard from "pages/AuthGuard/AuthGuard";
 import HostelPages from "pages/HostelPages/HostelPages";
 
