@@ -1,9 +1,9 @@
 import React, { useState } from "react";
-import HostelList from "./HostelList";
-import EmailCard from "./EmailCard";
-import SelectionCheckBox from "./SelectionCheckBox";
-import MainDashboard from "./MainDashboard";
-import NewFooter from "./Footer";
+import HostelList from "./src/pages/Login/HostelList";
+import EmailCard from "./src/pages/Login/EmailCard";
+import SelectionCheckBox from "./src/pages/Login/SelectionCheckBox";
+import MainDashboard from "./src/pages/Login/MainDashboard";
+import NewFooter from "./src/pages/Login/Footer";
 
 function Login() {
   // State to manage dropdown visibility
