@@ -316,6 +316,10 @@ tr:nth-child(odd) {background-color: #f2f2f2;}
   font-size: 14px;
 }
 
+.labels1{
+  background-color: #f3f7ff;
+}
+
 .link-labels{
   font-size: 15px;
   color: #2f3045;
@@ -569,6 +573,7 @@ background-color: orangered;
     font-weight: 600;
     color: #2f3045;
     font-family: "Lato", sans-serif;
+    
   }
 
  .hostel-names{
@@ -610,4 +615,20 @@ background-color: orangered;
 
 .green-color{
   background-color: #004C23;
+}
+
+
+.light-green{
+  background-color: #00a652;
+}
+
+
+.room-box {
+  transition: background-color 0.3s, color 0.3s;
+  color: green;
+}
+
+.room-box:hover {
+  background-color: #004C23;
+  color: white;
 }

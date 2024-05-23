@@ -3,6 +3,7 @@ import MainDashboardTop from "pages/Login/MainDashboardTop";
 import { useNavigate } from "react-router-dom";
 import EmailCard from "pages/Login/EmailCard";
 import NewFooter from "pages/Login/Footer";
+import RoomBox from "./HostelRooms";
 
 function HostelPages() {
   const [currentView, setCurrentView] = useState("Overview");
@@ -20,6 +21,49 @@ function HostelPages() {
   };
 
   const [activeButton, setActiveButton] = useState("Overview"); // State to track active button
+
+  const [showRoomBoxes, setShowRoomBoxes] = useState(false);
+
+  const handlesButtonClick = (buttonName) => {
+    setActiveButton(buttonName);
+    if (buttonName === "Detached") {
+      setShowRoomBoxes(true);
+    } else {
+      setShowRoomBoxes(false);
+    }
+  };
+
+  const handleNewButtonClick = () => {
+    setActiveButton("Detached-rooms");
+  };
+
+
+  const rooms = [
+    { roomNumber: "101", capacity: 4, slotsLeft: 2 },
+    { roomNumber: "102", capacity: 6, slotsLeft: 4 },
+    { roomNumber: "103", capacity: 4, slotsLeft: 2 },
+    { roomNumber: "104", capacity: 6, slotsLeft: 4 },
+    { roomNumber: "105", capacity: 6, slotsLeft: 4 },
+    { roomNumber: "106", capacity: 6, slotsLeft: 4 },
+    { roomNumber: "107", capacity: 4, slotsLeft: 2 },
+    { roomNumber: "108", capacity: 6, slotsLeft: 4 },
+    { roomNumber: "109", capacity: 4, slotsLeft: 2 },
+    { roomNumber: "110", capacity: 6, slotsLeft: 4 },
+    { roomNumber: "111", capacity: 6, slotsLeft: 4 },
+    { roomNumber: "112", capacity: 6, slotsLeft: 4 },
+    { roomNumber: "101", capacity: 4, slotsLeft: 2 },
+    { roomNumber: "102", capacity: 6, slotsLeft: 4 },
+    { roomNumber: "103", capacity: 4, slotsLeft: 2 },
+    { roomNumber: "104", capacity: 6, slotsLeft: 4 },
+    { roomNumber: "105", capacity: 6, slotsLeft: 4 },
+    { roomNumber: "106", capacity: 6, slotsLeft: 4 },
+    { roomNumber: "107", capacity: 4, slotsLeft: 2 },
+    { roomNumber: "108", capacity: 6, slotsLeft: 4 },
+    { roomNumber: "109", capacity: 4, slotsLeft: 2 },
+    { roomNumber: "110", capacity: 6, slotsLeft: 4 },
+    { roomNumber: "111", capacity: 6, slotsLeft: 4 },
+    { roomNumber: "112", capacity: 6, slotsLeft: 4 },
+  ];
 
   return (
     <div className="relative">
@@ -215,164 +259,79 @@ function HostelPages() {
           )}
 
           {currentView === "Rooms" && (
+            <div className="md:flex justify-between ">
+              <div>
+                <div className="big-screen-labels shadow-md  md:w-[100%] md:ml-[40%] w-[100%] mb-10">
+                  <div className="p-10 border-b-4 border-t-4 hover:bg-slate-100 focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-opacity-50">
+                    <button
+                      onClick={handlesButtonClick}
+                      className={`${
+                        activeButton === "Rooms"
+                          ? "active-button"
+                          : "labels"
+                      } pb-10 pt-10 `}
+                      style={{ display: "block", width: "100%" }}
+                    >
+                      <p className="">Detached</p>
+                    </button>
+                  </div>
 
-
-
-
-
-
-
-
-
-
-
-            
-            <div>
-              <div className="big-screen-labels shadow-md  md:w-[10%] md:ml-[5%] md:mr-[5%]  w-[100%]   mb-10">
-                <div className=" border border-black ">
-                <button
-                  onClick={() => handleButtonClick("Overview")}
-                  className={`${
-                    activeButton === "Overview" ? "active-button" : "labels"
-                  } pb-10 pt-10`}
-                  style={{ display: "block", width: "100%" }}
-                >
-                  <p className="block">Detached</p>
-                </button>
+                  <div className="p-10 border-b-4 hover:bg-slate-100 focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-opacity-50">
+                    <button
+                      onClick={() => handleNewButtonClick("Rooms")}
+                      className={`${
+                        activeButton === "semi-detached" ? "active-button" : "labels"
+                      } pb-10 pt-10`}
+                      style={{ display: "block", width: "100%" }}
+                    >
+                      <p>Semi-Detached</p>
+                    </button>
+                  </div>
+                  <div className="p-10 border-b-4 hover:bg-slate-100 focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-opacity-50">
+                    <button
+                      onClick={() => handleButtonClick("Location")}
+                      className={`${
+                        activeButton === "Location" ? "active-button" : "labels"
+                      } pb-10 pt-10`}
+                      style={{ display: "block", width: "100%" }}
+                    >
+                      <p>Location</p>
+                    </button>
+                  </div>
+                  <div className="p-10 border-b-4 hover:bg-slate-100 focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-opacity-50">
+                    <button
+                      onClick={() => handleButtonClick("Amenities")}
+                      className={`${
+                        activeButton === "Amenities"
+                          ? "active-button"
+                          : "labels"
+                      } pb-10 pt-10`}
+                      style={{ display: "block", width: "100%" }}
+                    >
+                      <p>Amenities</p>
+                    </button>
+                  </div>
                 </div>
-                <button
-                  onClick={() => handleButtonClick("Rooms")}
-                  className={`${
-                    activeButton === "Rooms" ? "active-button" : "labels"
-                  } pb-10`}
-                  style={{ display: "block", width: "100%" }}
-                >
-                  <p>Semi-Detached</p>
-                </button>
-                <button
-                  onClick={() => handleButtonClick("Location")}
-                  className={`${
-                    activeButton === "Location" ? "active-button" : "labels"
-                  } pb-10`}
-                  style={{ display: "block", width: "100%" }}
-                >
-                  <p>Location</p>
-                </button>
-                <button
-                  onClick={() => handleButtonClick("Amenities")}
-                  className={`${
-                    activeButton === "Amenities" ? "active-button" : "labels"
-                  } pb-10`}
-                  style={{ display: "block", width: "100%" }}
-                >
-                  <p>Amenities</p>
-                </button>
               </div>
+
+              <div className="room-boxes-container md:mr-[5%]">
+      <div className="grid grid-cols-2 flex md:grid-cols-6 gap-4 md:gap-2">
+        {rooms.map((room, index) => (
+          <RoomBox 
+            key={index} 
+            roomNumber={room.roomNumber} 
+            capacity={room.capacity} 
+            slotsLeft={room.slotsLeft} 
+          />
+        ))}
+      </div>
+    </div>
             </div>
           )}
 
-          {/* <div className="ml-[5%] mr-[5%] md:ml-[10%] md:mr-[10%]">
-              <div className="md:flex md:justify-between">
-                <div>
-                  <h2 className="hostel-names mb-2">Rooms</h2>
-                  <p className="text-gray-500 login2 mb-3">Hostel Location</p>
-                  <div className="flex mb-3">
-                    <img src="images/star-icon.png" className="w-4 h-4 "></img>
-                    <img src="images/star-icon.png" className="w-4 h-4"></img>
-                    <img src="images/star-icon.png" className="w-4 h-4"></img>
-                  </div>
-                  <p className="login2 mb-3">4.8/5 Wonderful - 500 reviews</p>
-                </div>
-                <div>
-                  <p className="new-price mb-3">
-                    {" "}
-                    ₵ 2500 <span className="login2">(Per year)</span>
-                  </p>
-
-                  <button
-                    className="primary-color p-4 w-[30%] md:w-[100%] rounded-md text-color-white book-now mb-5"
-                    onClick={handleHostelPagesClick}
-                  >
-                    Book now
-                  </button>
-                </div>
-              </div>
-              <div className="hostel-profile mb-5 md:mt-5 ">
-                <p className="line-height mb-2 md:mb-5">
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorem Ipsum has been the industry's
-                  standard dummy text ever since the 1500s, when an unknown
-                  printer took a galley of type and scrambled it to make a type
-                  specimen book. It has survived not only five centuries, but
-                  also the leap into electronic typesetting, remaining
-                  essentially unchanged. It was popularised in the 1960s with
-                  the release of Letraset sheets containing Lorem Ipsum
-                  passages, and more recently with desktop publishing software
-                  like Aldus PageMaker including versions of Lorem Ipsum. Why do
-                  we use it? It is a long established fact that a reader will be
-                  distracted by the readable content of a page when looking at
-                  its layout. The point of using Lorem Ipsum is that it has a
-                  more-or-less normal distribution of letters, as opposed to
-                  using 'Content here, content here', making it look like
-                  readable English.{" "}
-                </p>
-
-                <p className="line-height">
-                  Many desktop publishing packages and web page editors now use
-                  Lorem Ipsum as their default model text, and a search for
-                  'lorem ipsum' will uncover many web sit this the first true
-                  generator on the Internet. It uses a dictionary of over 200
-                  Latin words, combined with a handful of model sentence
-                  structures, to generate Lorem Ipsum which looks reasonable.
-                  The generated Lorem Ipsu
-                </p>
-              </div>
-              <div className="relative">
-              <div className="md:flex md:justify-center">
-                <div className="md:w-[40%] md:mr-5">
-                  <img
-                    src="https://angular.envytheme.com/elad/assets/images/gallery/blue-atcr.jpg"
-                    className="w-[40%] md:w-[100%] h-[40%] md:h-[100%] mb-2"
-                  ></img>
-                </div>
-                <div className="md:w-[100%] md:mr-5">
-                  <h2 className="mb-2 md:mb-4 hostel-manager">Hostel 1</h2>
-                  <h3 className="mb-2 md:mb-4  ori-hostel-manager active-button">Hostel Manager</h3>
-                  <div className="hostel-profile">
-                    <p className="line-height">
-                      Cras ultricies ligula sed magna dictum porta. Vestibulum
-                      ac diam sit amet quam vehicula elementum sed sit amet dui.
-                      Vivamus magna justo, lacinia eget consectetur sed,
-                      convallis at tellus. Vivamus magna justo, lacinia eget
-                      consectetur sed, convallis at tellus. Pellentesque in
-                      ipsum id orci porta dapibus. Vivamus magna justo, lacinia
-                      eget consectetur sed.
-                    </p>
-                  </div>
-                </div>
-
-                <div  className="md:w-[40%] mt-5 md:mt-0 ">
-                <h2 className="mb-2 md:mb-5 hostel-manager">Most Popular facilities</h2>
-                  <div className="flex mb-5">
-                    <img src="images/car-icon.png" className="w-4 h-4 md:mr-3"></img>
-                    <span className="w-full">Free Wifi</span>
-                  </div>
-                  <div className="flex mb-5">
-                    <img src="images/car-icon.png" className="w-4 h-4 md:mr-3"></img>
-                    <span className=" w-full">Free Wifi</span>
-                  </div>
-                  <div className="flex mb-5">
-                    <img src="images/car-icon.png" className="w-4 h-4 md:mr-3"></img>
-                    <span className=" w-full">Free Wifi</span>
-                  </div>
-                  <div className="flex mb-5">
-                    <img src="images/car-icon.png" className="w-4 h-4 md:mr-3"></img>
-                    <span className=" w-full">Free Wifi</span>
-                  </div>
-                </div>
-              </div>
-              </div>
-            </div> */}
+          {currentView === -"Detached-rooms" && (
+            <p>this is the detached rooms section</p>
+          )}
 
           {currentView === "Location" && (
             <div className="ml-[5%] mr-[5%] md:ml-[10%] md:mr-[10%]">
